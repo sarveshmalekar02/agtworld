@@ -1,0 +1,313 @@
+.post-section {
+    max-width: 1040px;
+    padding-left: 40%;
+}
+
+.post-section .top-header {
+    margin-top: 28px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-left: 3%;
+    border-left: 2%;
+}
+
+.post-section .top-header ul li {
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
+.post-section .top-header .post-btn button {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #EDEEF0;
+
+}
+
+.post-section .top-header .post-btn button.btn-bg1 {
+    margin-right: 15px;
+    background-color: #EDEEF0;
+    width: 130px;
+    padding-inline: 0px;
+}
+
+.post-section .top-header .post-btn button.btn-bg2 {
+    background-color: #2F6CE5;
+    color: white;
+    margin-right: 40px;
+    width: 125px;
+}
+
+ .user img{
+  border-radius: 50%;
+
+}
+
+.post-section .top-header .active {
+    color: black;
+    position: relative;
+    
+    
+}
+
+.post-section .top-header .active::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    background-color: black;
+    
+}
+
+.post-section .main-post {
+    width: 100%;
+    margin-top: 28px;
+    padding-left: 3%;
+}
+
+.post-section .main-post .poster-left .phone-post {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.min-btn1 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.min-btn2 {
+    font-weight: 500;
+    font-size: 13px;
+    background: #F1F3F5;
+    padding: 5px 10px;
+}
+
+/* main css of poster left end*/
+
+.poster-right .center-dive {
+    width: 243px;
+    margin-right: 28px;
+}
+
+.poster-right .location label {
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.poster-right .location label input {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.poster-right .location label input::placeholder {
+    color: #B8B8B8;
+}
+
+.poster-right .location label span:last-child {
+    cursor: pointer;
+}
+
+.poster-right .location p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.poster-right .user-list p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.poster-right .user-list .list button {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.poster-right .user-list .list span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.card {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: start;
+    margin-right: 24px;
+    
+}
+
+.card .img{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.post{
+    padding: 20px;
+    padding-top: 3px;
+}
+
+.card:first-child {
+    margin-top: 0;
+}
+
+.card .type {
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+.card .title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+
+.card .visit-button p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card .visit-button button {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    border-radius: 8px;
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #E56135;
+}
+
+.card .visit-button .apply {
+    color: #02B875;
+}
+
+.card .user-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card .view {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card .share {
+    background: #EDEEF0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.card .share span {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card .edit {
+    height: 32px;
+    width: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editbg {
+    background: #BFBFC0;
+}
+
+
+
+.card .edit ul {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    width: 160px;
+    height: 102px;
+    padding: 10px;
+    top: 38px;
+    left: -126px;
+}
+
+.card .edit ul li {
+    margin-top: 5px;
+}
+
+/* main css end  */
+
+
+@media screen and (max-width:575px) {
+   
+    .card .type {
+        font-size: 14px;
+    }
+
+    .card .img{
+        height: 130px;
+    }
+
+    .card .post{
+        padding: 4px;
+        padding-inline: 10px;
+        padding-bottom: 10px;
+    }
+
+
+
+    .poster-left{
+        margin-top: -16px;
+    }
+
+    .card .title {
+        font-size: 16px;
+    }
+
+    .card .discription {
+        font-size: 14px;
+    }
+
+    .card .user-name {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .post-section .top-header {
+        border-bottom: none;
+    }
+
+    .post-section {
+        margin-top: -10px;
+       
+    }
+
+
+}

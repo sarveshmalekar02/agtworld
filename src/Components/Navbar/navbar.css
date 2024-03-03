@@ -1,0 +1,55 @@
+
+.account p {
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    padding-right: 50px;
+
+}
+
+.menu span {
+    color: #8A8A8A;
+}
+
+
+
+.menu{
+    height: 20px;
+}
+
+.search {
+    background-color: #DEE2E6;
+    width: 360px;
+    height: 42px;
+    border-radius: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: transparent;
+    width: 242px;
+    height: 19px;
+    margin-left: 5px;
+}
+
+.union-color {
+    color: #27A365;
+}
+
+.union-color2 {
+    color: #5C5D5D;
+}
+
+.sign-color {
+    color: #2F6CE5;
+}
+
+.hidden-menu{
+    z-index: 99999;
+}
+

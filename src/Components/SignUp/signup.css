@@ -1,0 +1,162 @@
+body,
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  z-index: 9999;
+}
+
+.signup {
+  width: 735px;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+
+  transform: translateY(-50%);
+  z-index: 9999;
+  
+}
+
+.signup .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.signup .close2 {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  background-color: gray;
+  border-radius: 50%;
+  padding: 4px;
+  color: white;
+}
+
+.signup-body {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 14px;
+}
+
+.signup-body .form-div {
+  padding: 2px 20px;
+}
+
+.signup-body .form-div .main-form p {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: start;
+}
+
+.signup-body .form-div .main-form input {
+  background: #f7f8fa;
+  border: 1px solid #d9d9db;
+  outline: none;
+  border-radius: 0px 0px 2px 2px;
+  font-size: 16px;
+}
+
+.signup-body .form-div .main-form .submit {
+  background: #2f6ce5;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  padding: 10px 0px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.signup-body .form-div .main-form .facebook,
+.google {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding: 7px 0px;
+  border: 1px solid #d9d9db;
+  border-radius: 2px;
+}
+
+.signup-body .title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #008a45;
+  background: #effff4;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.signup-body .form-div .img-div .fp {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.last-p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1px;
+}
+
+.sing-color {
+  color: #2f6ce5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  .signup {
+    width: 100%;
+    left: 0;
+    margin-top: 12%;
+  }
+
+  .signup-body .form-div .main-form .submit {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signup {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signup {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .signup-body {
+    margin-top: 25%;
+  }
+
+  .submit {
+    margin-bottom: 10px;
+  }
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+  .google {
+    margin-bottom: 14px;
+  }
+
+  .main-form {
+    margin-bottom: 16%;
+    margin-top: 10px;
+  }
+}

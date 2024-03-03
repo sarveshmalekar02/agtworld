@@ -8,6 +8,7 @@ import Post from './Components/AllPosts/post'
 function App() {
   return (
     <div className="App">
+    <title>AtgWorld</title>
       <Navbar/>
       <Banner/>
       <Post/>

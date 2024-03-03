@@ -14,7 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
+ 
 
   const handleSignIn = async () => {
     try {
@@ -26,7 +26,7 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
       toast.success("Successfully signed in!");
     
     } catch (error) {
-      console.error("Sign in error:", error);
+      
       toast.error("Sign in error");
     }
   };
@@ -99,7 +99,7 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
                   </span>
                 </p>
               </div>
-              {error && <p className="error">{error}</p>}
+             
               <button className="facebook w-100">
                 <BsFacebook className="me-2" />
                 Sign In with Facebook

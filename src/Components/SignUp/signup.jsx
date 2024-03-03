@@ -9,6 +9,7 @@ import "@fontsource/ibm-plex-sans";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { app } from "../../firebase";
+import { ToastContainer, toast } from "react-toastify";
 
 const SignUp = ({ setOpenSignUp, open, setOpenSignIn }) => {
   const [email, setEmail] = useState(""); // State for email
@@ -26,14 +27,18 @@ const SignUp = ({ setOpenSignUp, open, setOpenSignIn }) => {
       setPassword("");
       setName("");
       setLastName("");
-
-
+      toast.success("Successfully Created");
+    
       setOpenSignUp(false);
     } catch (error) {
       // Handle sign-up errors
       console.error("Error signing up:", error.message);
+      toast.error("Invalid Email or Password!");
     }
   };
+  
+
+  
 
   return (
     <div className={`main-container ${open ? "d-block" : "d-none"}`}>
@@ -159,6 +164,7 @@ const SignUp = ({ setOpenSignUp, open, setOpenSignIn }) => {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

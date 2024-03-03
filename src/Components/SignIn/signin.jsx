@@ -8,7 +8,7 @@ import "./signin.css";
 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from "../../firebase";
-
+import { ToastContainer, toast } from "react-toastify";
 
 
 const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
@@ -21,12 +21,17 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
       const auth = getAuth(app);
       await signInWithEmailAndPassword(auth, email, password);
       setOpenSignIn(false);
-      console.log(" User is signed in.");
+      console.log("User is signed in.");
+
+      toast.success("Successfully signed in!");
+    
     } catch (error) {
-      setError(error.message);
+      console.error("Sign in error:", error);
+      toast.error("Sign in error");
     }
   };
 
+  
   return (
     <div className={`main-container ${open2 ? "d-block" : "d-none"}`}>
       <div className={`signin`}>
@@ -44,8 +49,19 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
           <div className="form-div d-flex justify-content-between">
             <div className="w-100 w-lg-50 main-form">
               <p className="d-none d-lg-block ">Sign In</p>
-              <span style={{ marginBottom: "20px", display: "flex", alignItems: "center" }}>
-                <p style={{ margin: "0", marginInlineEnd: '49%' }} className="d-lg-none">Welcome Back!</p>
+              <span
+                style={{
+                  marginBottom: "20px",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <p
+                  style={{ margin: "0", marginInlineEnd: "49%" }}
+                  className="d-lg-none"
+                >
+                  Welcome Back!
+                </p>
 
                 <p onClick={() => setOpenSignIn(false)} className="text-end">
                   <RxCross1 size={25} className="close2 d-lg-none" />
@@ -57,17 +73,19 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-              ></input>
+              />
               <input
                 className="w-100 p-2"
                 type="password"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-              ></input>
+              />
 
               <div className="d-flex justify-content-between align-items-center">
-                <button className="submit" onClick={handleSignIn}>Sign In</button>
+                <button className="submit" onClick={handleSignIn}>
+                  Sign In
+                </button>
                 <p className="fp text-end d-block d-lg-none mb-0 ">
                   <span
                     className="fs-6"
@@ -94,7 +112,9 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
                 Sign In with Google
               </button>
 
-              <a className="password " href="/">Forgot Password</a>
+              <a className="password " href="/">
+                Forgot Password
+              </a>
             </div>
             <div className="w-lg-50 img-div d-none d-lg-block">
               <p className="fp text-end">
@@ -114,6 +134,7 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

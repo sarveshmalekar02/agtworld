@@ -36,7 +36,7 @@ const Post = () => {
       }
     });
 
-    return unsubscribe; // Cleanup function to unsubscribe from the auth state change 
+    return unsubscribe; // Cleanup function to Unsubscribe from the auth state change 
   }, []);
   return (
     <div className="post-section mx-auto px-3">

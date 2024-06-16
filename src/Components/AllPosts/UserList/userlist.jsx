@@ -8,7 +8,7 @@ import { AiFillLike } from "react-icons/ai";
 function userlist() {
     return (
         <div>
-<div className="user-list user mt-5">
+          <div className="user-list user mt-5">
                 <p className="text-uppercase d-flex align-items-center">
                   <span className="d-flex align-items-center me-1">
                     <AiFillLike width={16} height={15} />
@@ -46,8 +46,7 @@ function userlist() {
                   </div>
                   <p className="text-end mt-5 text-info">See More...</p>
                 </div>
-              </div>
-            
+              </div>        
         </div>
     )
 }

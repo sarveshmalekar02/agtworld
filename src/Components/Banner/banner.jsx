@@ -15,14 +15,14 @@ const Banner = () => {
     useEffect(() => {
         const auth = getAuth(app);
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setUserSignedIn(user); // Update userSignedIn based on whether user is present
+            setUserSignedIn(user); // update userSignedIn based on whether user is present
         });
         
         return () => unsubscribe();
     }, []);
 
     if (userSignedIn) {
-        return null; // Render nothing if the user is signed in
+        return null; // render nothing if the user is signed in
     }
 
     return (

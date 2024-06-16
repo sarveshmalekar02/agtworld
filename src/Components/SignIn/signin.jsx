@@ -30,7 +30,7 @@ const SignIn = ({ setOpenSignIn, open2, setOpenSignUp }) => {
       toast.error("Sign in error");
     }
   };
-
+//
   
   return (
     <div className={`main-container ${open2 ? "d-block" : "d-none"}`}>

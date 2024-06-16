@@ -15,7 +15,7 @@ const SignUp = ({ setOpenSignUp, open, setOpenSignIn }) => {
   const [email, setEmail] = useState(""); // State for email
   const [password, setPassword] = useState(""); // State for password
   const [name, setName] = useState(""); // for firstname
-  const [lastName, setLastName] = useState("");  //for lastname
+  const [lastName, setLastName] = useState("");  // for lastname
 
   const handleSignUp = async () => {
     try {

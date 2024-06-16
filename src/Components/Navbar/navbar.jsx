@@ -28,6 +28,7 @@ function Navbar() {
 
     // const handleSignInClick = () => {
     //     setOpenSignIn(true);
+    // 
     // };
 
     const handleSignOut = () => {
